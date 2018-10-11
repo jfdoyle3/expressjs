@@ -10,6 +10,11 @@ var app=express();
 // Short hand express method to do the above method.
 app.use(express.static('public'));
 
+app.get('/blocks', function(request, response){
+    var blocks=['Fixed','Movable','Rotating'];
+    response.json(blocks);
+});
+
 app.listen(8079, function(){
     console.log('port open');
 });
