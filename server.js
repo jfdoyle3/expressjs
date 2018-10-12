@@ -13,6 +13,9 @@ app.use(express.static('public'));
 app.get('/blocks', function(request, response){
     var blocks=['Fixed','Movable','Rotating'];
     response.json(blocks);
+
+    appendToList(blocks)
+
 });
 
 app.listen(8079, function(){
