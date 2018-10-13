@@ -1,10 +1,6 @@
 var express=require('express');
 var app=express();
-var $=require('jquery');
-var logger=require('./logger');
-app.use(logger);
-// install jquery via npm - loading  jquery
-app.use('jquery', express.static(__dirname + '/node_modules/jquery/dist/'));
+
 // long hand method / another way to call the HTML file
 //app.get('/', function(request, response){
 // response.send("Resistanse is Futile!!"); 
@@ -17,6 +13,8 @@ app.use(express.static('public'));
 app.get('/blocks', function(request, response){
     var blocks=['Fixed','Movable','Rotating'];
     response.json(blocks);
+
+
 });
 
 app.listen(8079, function(){
