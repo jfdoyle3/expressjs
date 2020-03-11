@@ -1,0 +1,23 @@
+{
+  "name": "nodexpress",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000e\u0000x\u0000p\u0000r\u0000e\u0000s\u0000s\u0000.\u0000j\u0000s\u0000\r\u0000 \u0000",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfdoyle3/expressjs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jfdoyle3/expressjs/issues"
+  },
+  "homepage": "https://github.com/jfdoyle3/expressjs#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jquery": "^3.3.1"
+  }
+}
